@@ -1,8 +1,8 @@
-;; Find the last element of a list
+;; Find the last box of a list.
 
 (defun my_last (lista)
-  "Return the last element of a LISTA."
+  "Return sublist consisting of only the last element of a LISTA."
   (if (null (cdr lista))
-      (car lista)
+      lista
     (my_last (cdr lista))))
 
